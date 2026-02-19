@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <button onclick = "check()">Rock</button>
+    <button class="hey" onclick = "
+        const shuffle = Math.random(); 
+
+        let computer = '';
+        
+        if (shuffle >= 0 && shuffle <1/3){
+            computer = 'Rock';
+        }
+        else if (shuffle >= 1/3 && shuffle < 2/3){
+            computer = 'Paper';
+        }
+        else{ shuffle >= 2/3 && shuffle < 1
+            computer = 'Scissors';
+        }
+
+        alert(computer);
+        ">Rock</button>
 
     <script>
-
-        const better = 50;
-
-        function check(){
-            if(better > 30){
-                alert("You win!");
-            }else{
-                alert("You lose!");
-            }
-        }
 
     </script>
 </body>
