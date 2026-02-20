@@ -8,6 +8,7 @@
 
 <div class="Area">
   <button class="hey" onclick="play('Rock')">Rock</button>
+  <button class="hey" onclick="play2('Paper')">Paper</button>
 </div>
 
 <script>
@@ -25,8 +26,6 @@
       computer = 'Scissors';
     }
 
-  
-
     let result = ' ';
 
   if (computer === 'Rock') {
@@ -37,10 +36,35 @@
     result = 'You Win';
   }
 
-      alert(`You picked: Rock... Computer picked: ${computer}... ${result}`);
-      
+      alert(`You picked: Rock... Computer picked: ${computer}... ${result}`);   
   }
   
+  function play2(){
+
+    const shopple = Math.random();
+    let kumputer = ' ';
+
+    if (shopple > 0 && shopple <= 1/3){
+      kumputer = 'Rock';
+    } else if (shopple > 1/3 && shopple <= 2/3){
+      kumputer = 'Paper';
+    } else {
+      kumputer = 'Scissors';
+    }
+
+
+    let results = ' ';
+
+    if (kumputer === 'Rock'){
+      resultS = 'You Win!';
+    }else if (kumputer === 'Paper'){
+      resultS = 'Draw';
+    }else{
+      results = 'You Lose!';
+    }
+    
+    alert(`You picked Paper... Computer Picked ${kumputer}... ${results}`);
+  }
 </script>
 
 </body>
