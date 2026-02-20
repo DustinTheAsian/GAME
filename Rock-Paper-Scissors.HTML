@@ -7,9 +7,7 @@
 <body>
 
 <div class="Area">
-  <button class="hey" onclick="play()">Rock</button>
-  <button class="hey" onclick="play()">Paper</button>
-  <button class="hey" onclick="play()">Scissors</button>
+  <button class="hey" onclick="play('Rock')">Rock</button>
 </div>
 
 <script>
@@ -27,8 +25,22 @@
       computer = 'Scissors';
     }
 
-    alert(computer);
+  
+
+    let result = ' ';
+
+  if (computer === 'Rock') {
+    result = 'Draw';
+  } else if (computer === 'Paper') {
+    result = 'You Lose';
+  } else {
+    result = 'You Win';
   }
+
+      alert(`You picked: Rock... Computer picked: ${computer}... ${result}`);
+      
+  }
+  
 </script>
 
 </body>
