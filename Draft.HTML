@@ -8,22 +8,23 @@
 <body>
     
     <script>
-
+/*
         function payTax(caution,plus){
             console.log(caution + plus); 
         }
 
-        payTax(1000,800)
+        payTax(1000,800)*/
 
         function vars(){
+            name = prompt("What is your name?");
+            age = prompt("How old are you?");
+            city = prompt("Where do you live?");
 
-            name = 'John';
-            age = 20;
-            city = 'New York';
-
+            return `Your name is ${name}, you are ${age} years old, and you live in ${city}.`
+  
+          
         }
-
-        alert(vars);
+          alert(vars());      
 
     </script>
 
