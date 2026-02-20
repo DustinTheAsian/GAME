@@ -9,10 +9,13 @@
 <div class="Area">
   <button class="hey" onclick="play('Rock')">Rock</button>
   <button class="hey" onclick="play2('Paper')">Paper</button>
-  <button class="hey" onclick="play3('Paper')">Scissors</button>
+  <button class="hey" onclick="play3('Scissors')">Scissors</button>
 </div>
 
 <script>
+
+   // Rock Function // 
+
   function play() {
     const shuffle = Math.random();
     let computer = '';
@@ -40,6 +43,8 @@
       alert(`You picked: Rock... Computer picked: ${computer}... ${result}`);   
   }
   
+ // Paper Function // 
+
   function play2(){
 
     const shopple = Math.random();
@@ -67,6 +72,9 @@
     alert(`You picked Paper... Computer Picked ${kumputer}... ${results}`);
   }
 
+
+  // Scissors Function // 
+
   function play3(){
     
     const shuff = Math.random();
@@ -79,7 +87,19 @@
     }else{
       Card = 'Scissors';
     }
+  
+    let resulta = ' ';
     
+    if (Card === 'Rock'){
+      resulta = 'You Lose!';
+    }else if (Card === 'Paper'){
+      resulta = 'You Win!';
+    }else{
+      resulta = 'Draw';
+    }
+
+    alert (`You Picked Scissors...Computer Picked ${Card}...${resulta}`)
+
   }
 </script>
 
