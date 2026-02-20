@@ -9,6 +9,7 @@
 <div class="Area">
   <button class="hey" onclick="play('Rock')">Rock</button>
   <button class="hey" onclick="play2('Paper')">Paper</button>
+  <button class="hey" onclick="play3('Paper')">Scissors</button>
 </div>
 
 <script>
@@ -56,14 +57,29 @@
     let results = ' ';
 
     if (kumputer === 'Rock'){
-      resultS = 'You Win!';
+      results = 'You Win!';
     }else if (kumputer === 'Paper'){
-      resultS = 'Draw';
+      results = 'Draw';
     }else{
       results = 'You Lose!';
     }
     
     alert(`You picked Paper... Computer Picked ${kumputer}... ${results}`);
+  }
+
+  function play3(){
+    
+    const shuff = Math.random();
+    let Card = ' ';
+
+    if (shuff > 0 && shuff <= 1/3){
+      Card = 'Rock'
+    } else if (shuff > 1/3 && shuff <= 2/3){
+      Card = 'Paper';
+    }else{
+      Card = 'Scissors';
+    }
+    
   }
 </script>
 
