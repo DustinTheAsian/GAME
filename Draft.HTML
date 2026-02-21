@@ -19,10 +19,10 @@ function checkAge() {
     while (true) {
         name = prompt('Your Name?');
 
-        if (/^[a-zA-Z\s]+$/.test(name)) {
-            break; // valid → stop loop
-        } else {
-            alert("Name must contain letters only.");
+        if(/^[a-zA-Z/s]+$/.test(name)){
+            break;
+        }else {
+            alert ('Please Enter A Letters Only');
         }
     }
 
