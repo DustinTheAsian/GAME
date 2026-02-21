@@ -23,7 +23,18 @@
         }else{
             player = 'Scissors';
         }
-        alert(player);
+        
+        let resulta = ' ';
+
+        if(player === 'Rock'){
+            resulta = 'Tie';
+        }else if (player === 'Paper'){
+            resulta = 'You Lose';
+        }else{
+            resulta = 'You Win';
+        }
+
+        alert(`You picked Rock...Bot Picked ${player}...${resulta}`);
     }
 
 </script>
