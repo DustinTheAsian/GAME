@@ -1,22 +1,38 @@
-<button onclick="checkAge()">Enter Your Info</button>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Checker</title>
+</head>
+<body>
+
+    <button onclick="checkAge()">Enter Your Info</button>
 
 <script>
 function checkAge() {
     let name = prompt('Your Name?');
     let place = prompt('Your Place?');
     let age = prompt('Your Age?');
+    let live = 'Forest';
 
-    let ageNum = Number(age); // convert string to number
-
-    if (isNaN(ageNum)) {
-        alert('Please Enter A Valid Answer');
-    } else if (ageNum < 18) {
-        alert(`Sorry ${name}, You Are Not Old Enough`);
-    } else {
-        alert(`Hello ${name}...Welcome To The Game...Enjoy Your Time In ${place}`);
+    if (isNaN(age)){
+        alert('Please Enter A Valid Input');
+    }else if (age <18){
+        alert (`Sorry ${name},You are not old enough to enter this ${live}`);
+    }else if (age >= 60){
+        alert (`Sorry ${name}...You are too old to enter this ${live}`);
+    }else{
+        alert (`Welcome ${name} from ${place} to this ${live}`);
     }
 
-    // This alert will always show the results
-    alert(`Your Results Are:\nName: ${name}\nPlace: ${place}\nAge: ${ageNum}`);
+    alert(`Your Info is: \nName: ${name} \nPlace: ${place} \nAge: ${age} \nDomain: ${live}`)
+
 }
 </script>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
