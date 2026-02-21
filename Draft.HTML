@@ -7,15 +7,21 @@
 </head>
 <body>
     
-   <button onclick="vars()">Click Me</button>
+   <button onclick = "star()">Star Game</button>
 
 <script>
-function vars(){
-    let name = prompt('Tell Us Your Name');
-    let age = prompt('Tell Us Your Age');  
-    let city = prompt('Tell Us Your City');
+function star(){
+    
+    name = prompt("What is your name?");
+    age = prompt("What is your age?");
+    let ageNum = parseInt(age);
 
-    alert(`Your Name is ${name}... Your Age is ${age}... Your City is ${city}`);
+    if (ageNum <18){
+        alert(`You are not Verified ${name}...Because You Are Not ${ageNum} Years Old`);
+    }else if (ageNum >=18){
+        alert(`You are Verified ${name}...Because You Are ${ageNum} Years Old`);
+    }
+
 }
 </script>
 
