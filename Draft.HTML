@@ -9,26 +9,43 @@
 
 <script>
 function checkAge() {
-    let name = prompt('Your Name?');
-    let place = prompt('Your Place?');
-    let age = prompt('Your Age?');
+
+    let name;
+    let place;
+    let age;
     let live = 'Forest';
 
-    if (isNaN(age)){
-        alert('Please Enter A Valid Input');
-    }else if (age <18){
-        alert (`Sorry ${name},You are not old enough to enter this ${live}`);
-    }else if (age >= 60){
-        alert (`Sorry ${name}...You are too old to enter this ${live}`);
-    }else{
-        alert (`Welcome ${name} from ${place} to this ${live}`);
+    // 🔥 Keep asking until name is letters only
+    while (true) {
+        name = prompt('Your Name?');
+
+        if (/^[a-zA-Z\s]+$/.test(name)) {
+            break; // valid → stop loop
+        } else {
+            alert("Name must contain letters only.");
+        }
     }
 
-    alert(`Your Info is: \nName: ${name} \nPlace: ${place} \nAge: ${age} \nDomain: ${live}`)
+    place = prompt('Your Place?');
+    age = prompt('Your Age?');
 
+    if (isNaN(age) || age.trim() === "") {
+        alert("Please enter a valid number for age.");
+        return; // stop function
+    }
+
+    age = Number(age);
+
+    if (age < 18) {
+        alert(`You are too Young ${name} for this`);
+    } 
+    else if (age < 30) {
+        alert(`Welcome ${name} to the ${place} in the ${live}`);
+    }
+
+    alert(`Your Results:\nName: ${name}\nPlace: ${place}\nAge: ${age}\nDomain: ${live}`);
 }
 </script>
-
 
 </body>
 </html>
