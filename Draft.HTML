@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-   <button onclick = "star()">Star Game</button>
+<button onclick="checkAge()">Enter Your Info</button>
 
 <script>
-function star(){
-    
-    name = prompt("What is your name?");
-    age = prompt("What is your age?");
-    let ageNum = parseInt(age);
+function checkAge() {
+    let name = prompt('Your Name?');
+    let place = prompt('Your Place?');
+    let age = prompt('Your Age?');
 
-    if (ageNum <18){
-        alert(`You are not Verified ${name}...Because You Are Not ${ageNum} Years Old`);
-    }else if (ageNum >=18){
-        alert(`You are Verified ${name}...Because You Are ${ageNum} Years Old`);
+    let ageNum = Number(age); // convert string to number
+
+    if (isNaN(ageNum)) {
+        alert('Please Enter A Valid Answer');
+    } else if (ageNum < 18) {
+        alert(`Sorry ${name}, You Are Not Old Enough`);
+    } else {
+        alert(`Hello ${name}...Welcome To The Game...Enjoy Your Time In ${place}`);
     }
 
+    // This alert will always show the results
+    alert(`Your Results Are:\nName: ${name}\nPlace: ${place}\nAge: ${ageNum}`);
 }
 </script>
-
-
-</body>
-</html>
