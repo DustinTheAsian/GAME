@@ -29,9 +29,9 @@
 
     while(true){
             
-                age = prompt('Your Age?')
+                age = Number(prompt('Your Age?'));
           
-            if(age === null || age.trim() === ""){
+            if(age === null || ageInput.trim() === ""){
                 alert ('Proper Spacing or Input Something');
                 continue;
             }
@@ -40,17 +40,23 @@
                 alert('Too Young');
             continue;
             }
+            
 
             if(isNaN(age)){
                 alert('Enter Number');
-            }else{
-                alert('You Are Valid');
-            }   break;
+                continue;
+            }
+        }
 
-
+          if (age >= 18) {
+    alert('You Are Old Enough. Congrats!');
+    break;
+}
 
         }
-    }
+
+        
+    
 
     </script>
 </body>
