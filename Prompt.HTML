@@ -29,14 +29,14 @@
 
     while(true){
             
-                age = Number(prompt('Your Age?'));
+                age = prompt('Your Age?');
           
-            if(age === null || ageInput.trim() === ""){
+            if(age === null || age.trim() === ""){
                 alert ('Proper Spacing or Input Something');
                 continue;
             }
 
-            if(age <18){
+            if(age < 18){
                 alert('Too Young');
             continue;
             }
@@ -46,14 +46,16 @@
                 alert('Enter Number');
                 continue;
             }
+        
+              // if we get here, age is 18 or more
+            alert('You Are Old Enough. Congrats!');
+        alert(`Results:\nName: ${name}\nAge: ${age}`);
+            break; // ✅ exit loop
+            }
         }
 
-          if (age >= 18) {
-    alert('You Are Old Enough. Congrats!');
-    break;
-}
 
-        }
+        
 
         
     
