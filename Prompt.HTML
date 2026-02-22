@@ -18,7 +18,7 @@
     
     while(true){
 
-                 name = prompt('Your Name?')
+                name = prompt('Your Name?');
         
             if(/^[a-zA-Z\s]+$/.test(name)){
                 break;
@@ -26,6 +26,18 @@
                 alert('Enter Valid Input');
             }
         }
+
+    while(true){
+
+                place = prompt('Where You From?');
+
+            if(/^[a-zA-Z\s]+$/.test(place)){
+                break;
+            }else{
+                alert ('Input Letters');
+            }
+    }
+
 
     while(true){
             
@@ -38,7 +50,7 @@
 
             if(age < 18){
                 alert('Too Young');
-            continue;
+                continue;
             }
             
 
@@ -49,8 +61,8 @@
         
               // if we get here, age is 18 or more
             alert('You Are Old Enough. Congrats!');
-        alert(`Results:\nName: ${name}\nAge: ${age}`);
-            break; // ✅ exit loop
+            alert(`Results:\nName: ${name}\nAge: ${age}\nFrom: ${place}`);
+                break; // ✅ exit loop
             }
         }
 
