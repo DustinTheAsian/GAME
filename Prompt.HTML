@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick = "survey()">Enter</button>
+
+    <script>
+
+        function survey(){
+            let name;
+            let age;
+            let place;
+    
+    while(true){
+
+                 name = prompt('Your Name?')
+        
+            if(/^[a-zA-Z\s]+$/.test(name)){
+                break;
+            }else{
+                alert('Enter Valid Input');
+            }
+        }
+
+    while(true){
+            
+                age = prompt('Your Age?')
+          
+            if(age === null || age.trim() === ""){
+                alert ('Proper Spacing or Input Something');
+                continue;
+            }
+
+            if(isNaN(age)){
+                alert('Enter Number');
+            }else{
+                alert('You Are Valid');
+            }   break;
+
+
+
+        }
+    }
+
+    </script>
+</body>
+</html>
