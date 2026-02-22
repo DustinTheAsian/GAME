@@ -8,48 +8,59 @@
     <button onclick="checkAge()">Enter Your Info</button>
 
 <script>
-function checkAge() {
-
+function checkAge(){
     let name;
     let place;
     let age;
-    let live = 'Forest';
+    let live = 'forest';
 
-    // 🔥 Keep asking until name is letters only
-    while (true) {
-        name = prompt('Your Name?');
+        while (true){
+            name = prompt('Your name?');
+                if (/^[a-zA-Z\s]+$/.test(name)){
+                    break;
+                }else {
+                    alert('Please Enter A valid input');
+                }
+        
+    }
+   
+        while (true){
+            place = prompt('Your Place?');
 
-        if(/^[a-zA-Z/s]+$/.test(name)){
+
+        if(/^[a-zA-Z\s]+$/.test(place)){
             break;
-        }else {
-            alert ('Please Enter A Letters Only');
+        }else{
+            alert('Make it Valid')
         }
+}
+
+   while (true) {
+    let age = prompt('Your age');
+
+    if (age === null || age.trim() === "") {
+        alert('Please enter your age!');
+        continue; // ask again
     }
 
-    place = prompt('Your Place?');
-    age = prompt('Your Age?');
+    age = Number(age); // convert string to number
 
-    if (isNaN(age) || age.trim() === "") {
-        alert("Please enter a valid number for age.");
-        return; // stop function
+    if (isNaN(age)) {
+        alert('Input must be a number');
+        continue; // ask again
     }
-
-    age = Number(age);
 
     if (age < 18) {
-        alert(`You are too Young ${name} for this`);
-    } 
-    else if (age < 30) {
-        alert(`Welcome ${name} to the ${place} in the ${live}`);
+        alert("You're too young");
+        continue; // repeat age prompt
+    } else {
+        alert("Come here! You're valid");
+        continue; // age is valid → exit loop
     }
-
-    alert(`Your Results:\nName: ${name}\nPlace: ${place}\nAge: ${age}\nDomain: ${live}`);
+    
+alert(`this is you're resultn\ ${name} n\ ${place} n\ ${age}`)}
 }
 </script>
-
-</body>
-</html>
-
 
 </body>
 </html>
