@@ -1,0 +1,19 @@
+body{
+    background-color: gray;
+}
+
+.hoy {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.huy {
+    display: flex;            /* turn div into flex container */
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+    height: 100vh;            /* full viewport height */
+}
