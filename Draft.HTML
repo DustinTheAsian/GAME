@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <button class="Dog" onclick="play()">Rock</button>
+    <button class="Dog" onclick="hey()">Rock</button>
 
     <script>
 
@@ -16,13 +16,27 @@
             const shuff = Math.random();
             let computer = '';
 
-            if(shuffle < 1/3){
+            if(shuff < 1/3){
                 computer = 'Rock';
-            }else if (shuffle < 2/3){
+            }else if (shuff < 2/3){
                 computer = 'Paper';
             }else{
                 computer = 'scissors';
             }
+
+            let card = '';
+            let extraText = '';
+
+            if(computer === 'Rock'){
+                card = 'Tie';
+                extraText = ' as well';
+            }else if(computer === 'Paper'){
+                card = 'You Lose';
+            }else{
+                card = 'You win';
+            }
+
+            alert(`You picked rock...Bot Picked ${computer}${extraText}... result is ${card}`);
 
         }
 
