@@ -42,10 +42,10 @@
 
     function yo(){
 
-        let number = Math.random;
+        const number = Math.random();
         let AI = '';
 
-        if (number <1/3){
+        if(number <1/3){
             AI = 'Rock';
         }else if(number <2/3){
             AI = 'Paper';
@@ -55,14 +55,15 @@
 
         let ya = '';
 
-        if (AI === 'Rock'){
-             ya = 'Tie';
+        if(AI === 'Rock'){
+             ya = 'You Win';
         }else if (AI === 'Paper'){
-            ya = 'You Lose';
+            ya = 'Tie';
         }else{
-            AI = 'You Win';
+            ya = 'You Lose';
         }
 
+          alert(`You picked Paper...Bot Picked ${AI}...${ya}`);
     }
 
 </script>
