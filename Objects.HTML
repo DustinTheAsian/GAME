@@ -6,7 +6,8 @@
 </head>
 <body>
 
-  <button onclick = "hey()">GAME!!</button>
+  <button onclick = "hey()">Rock</button>
+  <button onclick = "yo()">Paper</button>
 
 
 
@@ -36,6 +37,23 @@
         }
 
         alert(`You picked Rock...Bot Picked ${player}...${resulta}`);
+    }
+
+
+    function yo(){
+
+        let number = Math.random;
+        let AI = '';
+
+        if (number <1/3){
+            alert('Rock');
+        }else if(number <2/3){
+            alert('Paper');
+        }else{
+            alert ('Scissors');
+        }
+
+
     }
 
 </script>
