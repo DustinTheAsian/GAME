@@ -65,7 +65,9 @@
           alert(`You picked Paper...Bot Picked ${AI}...${ya}`);
     }
 
-    function ye{
+
+
+    function ye(){
 
     const Roll = Math.random();
     let PC = '';
@@ -82,9 +84,14 @@
     let rezults = '';
 
     if(PC === 'Rock'){
+        rezults = 'You Lose';
+    }else if(PC === 'Paper'){
         rezults = 'You Win';
+    }else{
+        rezults = 'It Is Tie';
     }
 
+    alert(`You Picked Scissors Computer Picked ${PC}...now ${rezults}`);
 
     }
 
