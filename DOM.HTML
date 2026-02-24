@@ -11,6 +11,8 @@
 
     <button class="Gym">Workout</button>
 
+    
+
     <script>
 
        document.title = 'Hotdog';
@@ -19,7 +21,17 @@
 
        console.log(document.querySelector('button'));
 
-       console.log(document.querySelector('.Gym').innerHTML = 'Bench');
+
+       /* change the HTML word inside button and also selecting the class 'Gym' */
+       const buttonElements = (document.querySelector('.Gym').innerHTML = 'Beach');
+       console.log (buttonElements);
+
+
+       /* shows the whole HTML */
+       console.log (document.body.innerHTML);
+
+
+
       
     </script>
 
