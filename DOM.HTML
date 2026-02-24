@@ -6,21 +6,36 @@
     <title>Document</title>
 </head>
 <body>
+    <button>HEY</button>
+    <p>Hello World</p>
+
+    <button class="Gym">Workout</button>
+
     
-    <button class="Funct" onclick="Objects()">Click Me</button>
 
-<script>
+    <script>
 
-    function Objects(){
-        let name = 'Dustin';
-        let age = 90;
-        let place = 'Balanga';
+       document.title = 'Hotdog';
 
-        alert(`${name},${age},${place}`);
+       /* changed the innerHTML in button */
+       (document.querySelector('button').innerHTML = 'HAVEN');
 
-    }
+       /*display the while line of button not the HTML of the button */
+       console.log(document.querySelector('button'));
 
-</script>
+
+       /* change the HTML word inside button and also selecting the class 'Gym' */
+       const buttonElements = (document.querySelector('.Gym').innerHTML = 'Beach');
+       console.log (buttonElements);
+
+
+       /* shows the whole HTML */
+       console.log (document.body.innerHTML);
+
+
+
+      
+    </script>
 
 </body>
 </html>
