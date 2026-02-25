@@ -10,6 +10,7 @@
   <button class="hey" onclick="play('Rock')">Rock</button>
   <button class="hey" onclick="play2('Paper')">Paper</button>
   <button class="hey" onclick="play3('Scissors')">Scissors</button>
+  <button class="hey" onclick="reset('Paper')">Reset</button>
 </div>
 
 <script>
@@ -60,11 +61,24 @@ wins: ${score.wins} losses: ${score.losses} tie: ${score.tie}
   
  // Paper Function // 
 
+function reset(){
+  scores.wins = 0;
+  scores.losses = 0;
+  scores.tie = 0;
+
+  alert(`Score Reset!
+wins: ${scores.wins}
+losses: ${scores.losses}
+tie: ${scores.tie}`);
+}
+
     const scores = {
     wins: 0,
     losses: 0,
     tie: 0
   };
+
+   
 
   function play2(){
 
@@ -101,6 +115,7 @@ wins: ${score.wins} losses: ${score.losses} tie: ${score.tie}
     alert(`You picked Paper... Computer Picked ${kumputer}... ${results}
     wins: ${scores.wins} losses: ${scores.losses} tie: ${scores.tie}
     `);
+
   }
 
 
