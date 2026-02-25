@@ -60,6 +60,12 @@ wins: ${score.wins} losses: ${score.losses} tie: ${score.tie}
   
  // Paper Function // 
 
+    const scores = {
+    wins: 0,
+    losses: 0,
+    tie: 0
+  };
+
   function play2(){
 
     const shopple = Math.random();
@@ -83,12 +89,28 @@ wins: ${score.wins} losses: ${score.losses} tie: ${score.tie}
     }else{
       results = 'You Lose!';
     }
+
+    if (results === 'You Win!') {
+      scores.wins++;
+    } else if (results === 'You Lose!') {
+      scores.losses++;
+    } else if (results === 'Draw') {
+      scores.tie++;
+    }
     
-    alert(`You picked Paper... Computer Picked ${kumputer}... ${results}`);
+    alert(`You picked Paper... Computer Picked ${kumputer}... ${results}
+    wins: ${scores.wins} losses: ${scores.losses} tie: ${scores.tie}
+    `);
   }
 
 
   // Scissors Function // 
+
+        const scorees = {
+          Win: 0,
+          Losses: 0,
+          tie: 0
+        };
 
   function play3(){
     
@@ -113,9 +135,17 @@ wins: ${score.wins} losses: ${score.losses} tie: ${score.tie}
       resulta = 'Draw';
     }
 
-    alert (`You Picked Scissors...Computer Picked ${Card}...${resulta}`)
+    if (resulta === 'You Lose!'){
+      scorees.Losses++;
+    }else if (resulta === 'You Win!'){
+      scorees.Win++;
+    }else if (resulta === 'Draw'){
+      scorees.tie++;
+    }
 
-    return shuffle;
+    alert (`You Picked Scissors...Computer Picked ${Card}...${resulta}
+    win: ${scorees.Win} losses: ${scorees.Losses} tie: ${scorees.tie}
+    `);
 
   }
 </script>
