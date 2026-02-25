@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button onclick = "serve()">Click ME</button>
+
+    <script>
+        function serve(){
+            
+            let name;
+
+while(true){
+
+          name = prompt('Your Name?');
+        
+            if(/^[a-zA-Z\s]+$/.test(name)){
+                break;
+            }else{
+                alert('Enter Valid Input');
+            }
+        }
+
+         alert (`This is your name: ${name}`);
+
+    }
+    </script>
+</body>
+</html>
