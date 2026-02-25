@@ -16,10 +16,10 @@
 
 <script>
 function addNumbers() {
-  const a = document.getElementById('num1').value;
-  const b = document.getElementById('num2').value;
+  let a = document.getElementById('num1').value;
+  let b = document.getElementById('num2').value;
 
-  const sum = a + b; // ❌ BUG: this will concatenate strings instead of adding numbers
+ const sum = parseInt(a) + parseInt(b); 
 
   document.getElementById('result').innerText = "Result: " + sum;
 }
