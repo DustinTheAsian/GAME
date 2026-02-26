@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Debug If-Else</title>
+  <title>Debug If-Else (Colors)</title>
 </head>
 <body>
 
-<h2>Check Even or Odd</h2>
+<h2>Check Favorite Color</h2>
 
-<input type="text" id="num" placeholder="Enter a number">
-<button onclick="checkNumber()">Check</button>
+<input type="text" id="color" placeholder="Enter your favorite color">
+<button onclick="checkColor()">Submit</button>
 
 <p id="result"></p>
 
 <script>
-function checkNumber() {
-  let number = document.getElementById('num').value;
+function checkColor() {
+  let color = document.getElementById('color').value;
 
-  // Bug: number is a string, not a number
-  if (number = 2 = 0) {
-    document.getElementById('result').innerText = "Even";
+  // Bug: if-else logic is wrong
+  if (color = "red" || "blue") {
+    document.getElementById('result').innerText = "Cool color!";
   } else {
-    document.getElementById('result').innerText = "Odd";
+    document.getElementById('result').innerText = "Nice choice!";
   }
 }
 </script>
