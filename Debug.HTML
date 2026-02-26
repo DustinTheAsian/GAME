@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Debug If-Else (Colors)</title>
+  <title>Check Favorite Color</title>
 </head>
 <body>
 
@@ -14,17 +14,15 @@
 <p id="result"></p>
 
 <script>
-function checkColor(){ 
+function checkColor() {
+  // Get user input and convert to lowercase
+  let color = document.getElementById('color').value.toLowerCase();
 
-let color = 'Cool Color!';
-let mo = 'not cool';
-
-if (color === 'red' || color === 'blue'){
-  alert(`${color}`)
-}else if (color !== 'red' || 'blue'){
-  alert(`${mo}`);
-}
-
+  if (color === 'red' || color === 'blue') {
+    document.getElementById('result').innerText = "Cool color!";
+  } else {
+    document.getElementById('result').innerText = "Not cool!";
+  }
 }
 </script>
 
