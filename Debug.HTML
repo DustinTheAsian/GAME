@@ -14,15 +14,17 @@
 <p id="result"></p>
 
 <script>
-function checkColor() {
-  let color = document.getElementById('color').value;
+function checkColor(){ 
 
-  // Bug: if-else logic is wrong
-  if (color = "red" || "blue") {
-    document.getElementById('result').innerText = "Cool color!";
-  } else {
-    document.getElementById('result').innerText = "Nice choice!";
-  }
+let color = 'Cool Color!';
+let mo = 'not cool';
+
+if (color === 'red' || color === 'blue'){
+  alert(`${color}`)
+}else if (color !== 'red' || 'blue'){
+  alert(`${mo}`);
+}
+
 }
 </script>
 
