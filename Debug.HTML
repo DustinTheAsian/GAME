@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Debug Example</title>
+  <title>Debug If-Else</title>
 </head>
 <body>
 
-<h2>Add Two Numbers</h2>
+<h2>Check Even or Odd</h2>
 
-<input type="text" id="num1" placeholder="First number">
-<input type="text" id="num2" placeholder="Second number">
-<button onclick="addNumbers()">Add</button>
+<input type="text" id="num" placeholder="Enter a number">
+<button onclick="checkNumber()">Check</button>
 
 <p id="result"></p>
 
 <script>
-function addNumbers() {
-  let a = document.getElementById('num1').value;
-  let b = document.getElementById('num2').value;
+function checkNumber() {
+  let number = document.getElementById('num').value;
 
- const sum = parseInt(a) + parseInt(b); 
-
-  document.getElementById('result').innerText = "Result: " + sum;
+  // Bug: number is a string, not a number
+  if (number = 2 = 0) {
+    document.getElementById('result').innerText = "Even";
+  } else {
+    document.getElementById('result').innerText = "Odd";
+  }
 }
 </script>
 
