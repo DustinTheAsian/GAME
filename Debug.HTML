@@ -19,10 +19,12 @@ function checkColor() {
   let color = document.getElementById('color').value.toLowerCase();
 
   if (color === 'red' || color === 'blue') {
-    document.getElementById('result').innerText = "Cool color!";
+    document.getElementById("result").innerHTML = 'Cool color!';
   } else {
-    document.getElementById('result').innerText = "Not cool!";
+    document.getElementById("result").innerHTML = "Not cool!";
   }
+
+
 }
 </script>
 
