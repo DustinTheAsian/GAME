@@ -9,10 +9,16 @@
 <button onclick="changeText()">Change</button>
 
 <script>
-  function makeRed(){
-  
-    document.getElementById("textHide").style.display = 'none';
+  function textHide(){
+    document.getElementById("title").style.display = "none";
+  }
 
+  function textShow(){
+    document.getElementById("title").style.display = "flex";
+  }
+
+  function changeText(){
+    document.getElementById("title").innerHTML = "Hey"
   }
 </script>
 
