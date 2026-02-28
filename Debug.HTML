@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Check Favorite Color</title>
+  <title>Add Two Numbers</title>
 </head>
 <body>
 
-<h2>Check Favorite Color</h2>
+<h2>Add Two Numbers</h2>
 
-<input type="text" id="color" placeholder="Enter your favorite color">
-<button onclick="checkColor()">Submit</button>
+<input type="text" id="num1" placeholder="Enter first number">
+<input type="text" id="num2" placeholder="Enter second number">
+<button onclick="addNumbers()">Add</button>
 
 <p id="result"></p>
 
 <script>
-function checkColor() {
-  // Get user input and convert to lowercase
-  let color = document.getElementById('color').value.toLowerCase();
+function addnumbers() {
+  let n1 = document.getElementById("num1").value;
+  let n2 = document.getElementById("num2").value;
 
-  if (color === 'red' || color === 'blue') {
-    document.getElementById("result").innerHTML = 'Cool color!';
-  } else {
-    document.getElementById("result").innerHTML = "Not cool!";
-  }
+  let sum = n1 + n2;
 
-
+  document.getElementById("results").innerText = sum;
 }
 </script>
 
