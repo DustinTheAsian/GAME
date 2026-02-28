@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="title">Hello World</h2>
+
+<button onclick="makeRed()">Make Red</button>
+<button onclick="makeBlue()">Make Blue</button>
+<button onclick="makeBig()">Make Big</button>
+<button onclick="resetText()">Reset</button>
+
+<script>
+  function makeRed(){
+
+    document.getElementById("title").innerHTML = 'This is red';
+    document.getElementById("title").style.color = 'Red';
+
+  }
+
+  function makeBlue(){
+
+    document.getElementById("title").innerHTML = "This is Blue";
+    document.getElementById("title").style.color = 'Blue';
+
+  }
+
+  function makeBig(){
+
+    document.getElementById("title").innerHTML = "Big Text";
+    document.getElementById("title").style.fontSize = "50px";
+
+  }
+
+</script>
+
+</body>
+</html>
