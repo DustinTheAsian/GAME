@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reverse a Word</title>
+  <title>Reverse Each Word</title>
 </head>
 <body>
 
-<h2>Reverse Your Word</h2>
-<input type="text" id="word" placeholder="Enter a word">
-<button onclick="reverseWord()">Reverse</button>
+<h2>Reverse Each Word in a Sentence</h2>
+<input type="text" id="sentence" placeholder="Enter a sentence">
+<button onclick="reverseWords()">Reverse Words</button>
 
 <p id="result"></p>
 
 <script>
-function reverseWord() {
-  let w = document.getElementById("Word").value;
-  let rev = w.split("").reverse().join;
-  document.getElementById("results").innerText = rev;
+function reverseWords() {
+  let s = document.getElementById("sentence").value;
+  
+  let words = s.split(" ");
+  
+  let revWords = [];
+  
+  for (let i = 0; i < words.length; i++) {
+    revWords.push(words[i].split("").reverse()); // something is off here
+  }
+  
+  document.getElementById("result").innerText = revWords.join(" ");
 }
 </script>
 
