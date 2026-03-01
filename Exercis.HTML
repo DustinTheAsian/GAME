@@ -3,23 +3,37 @@
 <body>
 
 <h2 id="title">Hello World</h2>
+<h2 id="result">0</h2>
 
-<button onclick="textHide()">Hide</button>
-<button onclick="textShow()">Show</button>
-<button onclick="changeText()">Change</button>
+
+  <button onclick="makeRed()">Red</button>
+  <button onclick="makeBlue()">Blue</button>
+  <button onclick="increaseCount()">Increase</button>
 
 <script>
-  function textHide(){
-    document.getElementById("title").style.display = "none";
+  
+  function makeRed(){
+
+    document.getElementById("title").style.color = 'Red';
+
   }
 
-  function textShow(){
-    document.getElementById("title").style.display = "flex";
+  function makeBlue(){
+
+    document.getElementById("title").style.color = 'Blue';
+
+  }
+let result = document.getElementById("result");
+let num = parseInt(result.innerHTML);
+
+  function increaseCount(){
+
+    num ++;
+    result.innerHTML = num;
+
+
   }
 
-  function changeText(){
-    document.getElementById("title").innerHTML = "Hey"
-  }
 </script>
 
 </body>
