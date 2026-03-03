@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
 
-<h2 id="title">Hello World</h2>
-<h2 id="result">0</h2>
+  <h2 id="title">Hello World</h2>
+  <h2 id="result">0</h2>
 
-<button onclick="toggleText()">Change Text</button>
-<button onclick="increaseCount()">Add Count</button>
-<button onclick="reset()">Reset</button>
+  <button onclick="toggleText()">Change Text</button>
+    <button onclick="increaseCount()">Add Count</button>
+    <button onclick="decrease()">Reduce</button>
+    <button onclick="reset()">Reset</button>
+  
+  <script>
 
-<script>
-
-let title = document.getElementById("title");
-let result = document.getElementById("result");
-let num = 0;
+    let title = document.getElementById("title");
+    let result = document.getElementById("result");
+    let num = 0;
 
 function toggleText(){
   if(title.innerHTML === "Hello World"){
@@ -21,19 +27,28 @@ function toggleText(){
   } else {
     title.innerHTML = "Hello World";
   }
+  
 }
 
-function increaseCount(){
-  num++;
-  result.innerHTML = num;
-}
+ function increaseCount(){
 
-function reset(){
-  num = 0;
-  result.innerHTML = num;
-}
+    num++;
+    result.innerHTML = num;
 
-</script>
+  }
+
+ function decrease(){
+
+ }
+
+  function reset(){
+    
+    num = 0;
+    result.innerHTML = num;
+  }
+    
+
+  </script>
 
 </body>
 </html>
