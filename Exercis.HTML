@@ -15,12 +15,13 @@
     <button onclick="increaseCount()">Add Count</button>
     <button onclick="decrease()">Reduce</button>
     <button onclick="reset()">Reset</button>
-    <button onclick="Revolution()"></button>
+    <button onclick="revolution()">Change</button>
   
   <script>
 
     let title = document.getElementById("title");
     let result = document.getElementById("result");
+    let change = document.getElementById("change");
     let num = 0;
 
 function toggleText(){
@@ -48,6 +49,13 @@ function toggleText(){
     
     num = 0;
     result.innerHTML = num;
+
+  }
+
+  function revolution(){
+
+    change.innerHTML = "MADARA";
+
   }
     
 
