@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
 
-<h2 id="title">Hello World</h2>
-<h2 id="result">0</h2>
+  <h2 id="title">Hello World</h2>
+  <h2 id="result">0</h2>
 
-
-  <button onclick="makeRed()">Red</button>
-  <button onclick="makeBlue()">Blue</button>
-  <button onclick="increaseCount()">Increase</button>
-
-<script>
+  <button onclick="toggleText()">Change Text</button>
+    <button onclick="increaseCount()">Add Count</button>
+    <button onclick="Reset()">Reset</button>
   
-  function makeRed(){
+  <script>
 
-    document.getElementById("title").style.color = 'Red';
+    
 
-  }
-
-  function makeBlue(){
-
-    document.getElementById("title").style.color = 'Blue';
-
-  }
-let result = document.getElementById("result");
-let num = parseInt(result.innerHTML);
-
-  function increaseCount(){
-
-    num ++;
-    result.innerHTML = num;
-
-
-  }
-
-</script>
+  </script>
 
 </body>
 </html>
