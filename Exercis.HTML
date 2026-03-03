@@ -8,12 +8,14 @@
 <body>
 
   <h2 id="title">Hello World</h2>
+  <h2 id="change">WASSSSUP</h2>
   <h2 id="result">0</h2>
 
-  <button onclick="toggleText()">Change Text</button>
+    <button onclick="toggleText()">Change Text</button>
     <button onclick="increaseCount()">Add Count</button>
     <button onclick="decrease()">Reduce</button>
     <button onclick="reset()">Reset</button>
+    <button onclick="Revolution()"></button>
   
   <script>
 
@@ -38,7 +40,8 @@ function toggleText(){
   }
 
  function decrease(){
-
+    num--;
+    result.innerHTML = num;
  }
 
   function reset(){
