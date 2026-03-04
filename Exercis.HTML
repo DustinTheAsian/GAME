@@ -7,19 +7,39 @@
 </head>
 <body>
   
-  <h2 id ="aly">alysa Is...</h2>
+  <button ondblclick="roll1()">Rock</button>
 
-  <button onclick = "What()">Say It</button>
+  <script>
 
-    <script>
+      function roll1(){
 
-      function What(){
-  
-        let result = document.getElementById("aly").innerHTML = "Gorgeous";
+    const shuffle = Math.random();
+    let pc = "";
 
+      if(shuffle < 1/3){
+        pc = `Rock`;
+      }else if(shuffle < 2/3){
+        pc = 'paper';
+      }else{
+        pc = 'scissors';
       }
 
-    </script>
+    
+    let result = "";
+      
+      if(pc === 'Rock'){
+          result = 'Tie';
+      }else if(pc === 'Paper'){
+        result = 'You Lose';
+      }else{
+        result = 'You Win';
+      }
+
+
+      alert(`pc picked ${pc} and you picked rock ${result}`);
+    }
+  </script>
+
 
 </body>
 </html>
