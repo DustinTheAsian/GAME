@@ -6,74 +6,20 @@
   <title>Document</title>
 </head>
 <body>
-
-  <h2 id="title">Hello World</h2>
-  <h2 id="change">WASSSSUP</h2>
-  <h2 id="result">0</h2>
-  <h2 id="color">Style</h2>
-
-    <button onclick="toggleText()">Change Text</button>
-    <button onclick="increaseCount()">Add Count</button>
-    <button onclick="decrease()">Reduce</button>
-    <button onclick="reset()">Reset</button>
-    <button onclick="revolution()">Change</button>
-    <button onclick="uchiha()">BACK</button>
-
   
-  <script>
+  <h2 id ="aly">alysa Is...</h2>
 
-    let title = document.getElementById("title");
-    let result = document.getElementById("result");
-    let change = document.getElementById("change");
-    let css = document.getElementById("color");
-    let num = 0;
+  <button onclick = "What()">Say It</button>
 
-function toggleText(){
-  if(title.innerHTML === "Hello World"){
-    title.innerHTML = "Goodbye World";
-  } else {
-    title.innerHTML = "Hello World";
-  }
+    <script>
+
+      function What(){
   
-}
+        let result = document.getElementById("aly").innerHTML = "Gorgeous";
 
- function increaseCount(){
+      }
 
-    num++;
-    result.innerHTML = num;
-
-  }
-
- function decrease(){
-    num--;
-    result.innerHTML = num;
- }
-
-  function reset(){
-    
-    num = 0;
-    result.innerHTML = num;
-
-  }
-
-  function revolution(){
-
-    change.innerHTML = "MADARA";
-
-  }
-
-  function uchiha(){  
-z
-    title.innerHTML = "Reset";
-    result.innerHTML = 0; 
-    change.innerHTML = "Reset";
-    document.getElementById("color").style.color = "Bluce";
-
-  }
-  
-    
-
-  </script>
+    </script>
 
 </body>
 </html>
