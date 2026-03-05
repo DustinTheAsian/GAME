@@ -30,26 +30,26 @@
       }
 
     
-    let result = "";
+    let resultt = "";
       
       if(pc === 'Rock'){
-          result = 'Tie';
+          resultt = 'Tie';
       }else if(pc === 'paper'){
-        result = 'You Lose';
+        resultt = 'You Lose';
       }else{
-        result = 'You Win';
+        resultt = 'You Win';
       }
 
-      if(result  === 'You Win'){
-        score.wins++;
-      }else if(result  === 'You Lose'){
-        score.losses++;
-      }else if(result  === 'Tie'){
-        score.ties++;
+      if(resultt  === 'You Win'){
+        scoree.wins++;
+      }else if(resultt  === 'You Lose'){
+        scoree.losses++;
+      }else if(resultt  === 'Tie'){
+        scoree.ties++;
       }
 
-      alert(`pc picked ${pc} and you picked rock ${result} 
-      wins: ${score.wins} losses: ${score.losses} tie: ${score.ties}`);
+      alert(`pc picked ${pc} and you picked rock ${resultt}
+      wins: ${scoree.wins} losses: ${scoree.losses} tie: ${scoree.ties}`);
 
     }
 
@@ -77,15 +77,14 @@
       }
 
       if (resultt === 'You Win'){
-        scoree.winss++;
+        scoree.wins++;
       }else if(resultt === 'Tie'){
-        scoree.losses++;
+        scoree.ties++;
       }else if(resultt === 'You Lose')
-        scoree
+        scoree.losses++;
 
-        alert(`pc picked ${pc} and you picked rock ${result} 
+        alert(`pc picked ${Ai} and you picked Paper ${resultt} 
       wins: ${scoree.wins} losses: ${scoree.losses} tie: ${scoree.ties}`);
-
 
     }
 
