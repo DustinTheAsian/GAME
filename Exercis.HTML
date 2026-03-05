@@ -14,6 +14,7 @@
   <script>
 
         const score = {wins:0,losses:0,ties:0};
+        const scoree = {wins:0,losses:0,ties:0};
 
       function roll1(){
 
@@ -73,6 +74,10 @@
         resultt = 'Tie';
       }else{
         resultt = 'You Lose';
+      }
+
+      if (resultt === 'You Win'){
+        scoree.winss++;
       }
 
         alert(`pc picked ${Ai} and you picked paper ${resultt}`);
