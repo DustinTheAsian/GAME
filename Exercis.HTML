@@ -33,22 +33,22 @@
       
       if(pc === 'Rock'){
           result = 'Tie';
-      }else if(pc === 'Paper'){
+      }else if(pc === 'paper'){
         result = 'You Lose';
       }else{
         result = 'You Win';
       }
 
-      if(score === 'You Win'){
+      if(result  === 'You Win'){
         score.wins++;
-      }else if(score === 'You Lose'){
+      }else if(result  === 'You Lose'){
         score.losses++;
-      }else if(score === 'Tie'){
+      }else if(result  === 'Tie'){
         score.ties++;
       }
 
-      alert(`pc picked ${pc} and you picked rock ${result} ${score}`);
-
+      alert(`pc picked ${pc} and you picked rock ${result} 
+      wins: ${score.wins} losses: ${score.losses} tie: ${score.ties}`);
 
     }
 
