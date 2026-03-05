@@ -13,6 +13,8 @@
 
   <script>
 
+        const score = {wins:0,losses:0,ties:0};
+
       function roll1(){
 
     const shuffle = Math.random();
@@ -37,7 +39,17 @@
         result = 'You Win';
       }
 
-      alert(`pc picked ${pc} and you picked rock ${result}`);
+      if(score === 'You Win'){
+        score.wins++;
+      }else if(score === 'You Lose'){
+        score.losses++;
+      }else if(score === 'Tie'){
+        score.ties++;
+      }
+
+      alert(`pc picked ${pc} and you picked rock ${result} ${score}`);
+
+
     }
 
     function roll2(){
