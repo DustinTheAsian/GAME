@@ -7,7 +7,9 @@
 </head>
 <body>
   
-  <button ondblclick="roll1()">Rock</button>
+  <button onclick="roll1()">Rock</button>
+  <button onclick="roll2()">Paper</button>
+  <button onclick="roll3()">Scissors</button>
 
   <script>
 
@@ -35,9 +37,18 @@
         result = 'You Win';
       }
 
-
       alert(`pc picked ${pc} and you picked rock ${result}`);
     }
+
+    function roll2(){
+
+      const shuff = Math.random();
+      let Ai = "";
+
+
+    }
+
+
   </script>
 
 
