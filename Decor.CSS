@@ -1,21 +1,26 @@
 body{
     background-color: black;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
 }
 
 .Parent{
     height: 200px;
     width: 300px;
     background-color: green;
-    
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .Parent button{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin: 5px;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr (100px);
 }
