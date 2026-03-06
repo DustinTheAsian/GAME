@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+
+.Parent{
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    display: grid;
+
+}
+
+.Parent button{
+    background-color: black;
+}
