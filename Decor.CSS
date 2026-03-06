@@ -8,6 +8,14 @@ body{
     align-items: center;     /* vertical center */
 }
 
+.titlee{
+    color:white;
+    position: absolute;
+    size: large;
+    top: 290.15px;
+    font-size: large;
+}
+
 .Parent{
     height: 200px;
     width: 350px;
