@@ -28,6 +28,13 @@ body{
     width: 100px;
 }
 
+.Parent button:hover{
+    background-color: black;
+    box-shadow: 1px 1px 20px 5px white;
+    transition: 1.2s;
+    color: white;
+}
+
 .Parent:hover{
     transition: 1.4s;
     background-color: rgb(0, 0, 0);
