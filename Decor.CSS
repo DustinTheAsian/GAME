@@ -17,6 +17,7 @@ body{
 }
 
 .Parent{
+    border-radius: 10px;
     height: 200px;
     width: 350px;
     background-color: black;
