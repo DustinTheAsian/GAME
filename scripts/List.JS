@@ -8,6 +8,7 @@ function func1(){
     storage.push(input);
     console.log(storage);
     
+    selector.value = ''; 
 
 }
 
