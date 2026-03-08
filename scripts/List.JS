@@ -7,3 +7,4 @@ function func1(){
     console.log(input);
 
 }
+
