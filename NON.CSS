@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+.me{
+    height: 190px;
+    width: 200px;
+}
+
+.name{
+    color: white;
+}
+
+.degree{
+    color: white;
+}
