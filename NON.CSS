@@ -4,12 +4,13 @@ body{
 }
 
 .container{
+    border-radius: 10px;
     display: flex;
     position: absolute;
     top: 20%;
     left: 40%;
     padding: 10px;
-    height: 45%;
+    height: 50%;
     width: 250px;
     background-color: green;
     justify-content: center;
@@ -17,7 +18,7 @@ body{
 }
 
 .product{
-    border-radius:10px ;
+    border-radius: 10px;
     height: 250px;
     width: 200px;
 }
@@ -27,7 +28,7 @@ body{
     color: white;
     font: bold;
     right: 20px;
-    top:72%;
+    top:65%;
     color: red;
 }
 
@@ -35,13 +36,18 @@ body{
     position: absolute;
     color: white;
     font: bold;
-    top:80%;
+    top:72%;
 }
 
 .name2{
     position: absolute;
     color: white;
     font: bold;
-    top:88%;
+    top:78%;
+}
+
+.buy{
+    position: absolute;
+    top: 90%;
 }
 
