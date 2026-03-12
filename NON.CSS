@@ -28,7 +28,7 @@ body{
     color: white;
     font: bold;
     right: 20px;
-    top:65%;
+    top:60%;
     color: red;
 }
 
@@ -36,19 +36,19 @@ body{
     position: absolute;
     color: white;
     font: bold;
-    top:72%;
+    top:66%;
 }
 
 .name2{
     position: absolute;
     color: white;
     font: bold;
-    top:78%;
+    top:72%;
 }
 
 .buy{
     position: absolute;
-    top: 90%;
+    top: 85%;
     height: 40px;
     width: 80px;
     border: none;
