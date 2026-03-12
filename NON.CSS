@@ -17,20 +17,31 @@ body{
 }
 
 .product{
+    border-radius:10px ;
     height: 250px;
     width: 200px;
+}
+
+.discount{
+    position: absolute;
+    color: white;
+    font: bold;
+    right: 20px;
+    top:72%;
+    color: red;
 }
 
 .name{
     position: absolute;
     color: white;
     font: bold;
-    top:75%;
+    top:80%;
 }
 
 .name2{
     position: absolute;
     color: white;
     font: bold;
-    top:83%;
+    top:88%;
 }
+
