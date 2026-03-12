@@ -24,5 +24,13 @@ body{
 .name{
     position: absolute;
     color: white;
-    top:95%;
+    font: bold;
+    top:75%;
+}
+
+.name2{
+    position: absolute;
+    color: white;
+    font: bold;
+    top:83%;
 }
