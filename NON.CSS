@@ -22,3 +22,14 @@ body{
     color:white;
     padding:20px;
 }
+
+.nav{
+    list-style:none;
+}
+
+.nav li{
+    padding:12px;
+    cursor:pointer;
+    border-radius:6px;
+    transition:0.3s;
+}
